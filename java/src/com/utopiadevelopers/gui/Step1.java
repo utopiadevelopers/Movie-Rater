@@ -1,5 +1,7 @@
 package com.utopiadevelopers.gui;
 
+import java.awt.GridBagLayout;
+
 import javax.swing.JPanel;
 
 public class Step1 extends JPanel
@@ -17,6 +19,6 @@ public class Step1 extends JPanel
 	
 	public void setupGUI()
 	{
-		
+		setLayout(new GridBagLayout());
 	}
 }
