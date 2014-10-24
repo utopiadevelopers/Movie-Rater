@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2014 at 10:37 AM
+-- Generation Time: Oct 24, 2014 at 03:44 PM
 -- Server version: 5.6.20
--- PHP Version: 5.3.29
+-- PHP Version: 5.5.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `movie` (
 `uid` int(11) NOT NULL,
   `name` varchar(200) NOT NULL,
+  `year` date NOT NULL,
   `rating` float NOT NULL,
   `imdb_id` varchar(20) NOT NULL,
   `imdb_rating` float NOT NULL
@@ -42,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `movie` (
 -- Indexes for table `movie`
 --
 ALTER TABLE `movie`
- ADD PRIMARY KEY (`uid`);
+ ADD PRIMARY KEY (`uid`), ADD UNIQUE KEY `imdb_id` (`imdb_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
