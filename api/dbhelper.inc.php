@@ -6,7 +6,7 @@ class dbHelper
     private $server = 'localhost';
     private $user = 'utopdev_root';
     private $pass = "VENEbVU7{T]J";
-    private $database = 'utopdev_gre';
+    private $database = 'utopdev_movie_rater';
     private $db;
     // Constructor
     public function __construct()
